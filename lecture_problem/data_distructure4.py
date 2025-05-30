@@ -23,4 +23,9 @@ print(f"변환된 리스트 (+1/-1): {ch_lst}")
 
 # 변환된 숫자 리스트에서 합이 0이 되는 연속된 부분 수열을 찾아서 출력
 print("합이 0인 연속 부분 수열 목록: ")
-    
+for i in range(len(ch_lst)):
+    total = 0
+    for j in range(i, len(ch_lst)):  # ← 여기 핵심
+        total += ch_lst[j]
+        if total == 0:
+            print([*ch_lst[i:j+1]])
