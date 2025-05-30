@@ -25,7 +25,6 @@ print(f"변환된 리스트 (+1/-1): {ch_lst}")
 print("합이 0인 연속 부분 수열 목록: ")
 for i in range(len(ch_lst)):
     total = 0
-    for j in range(i, len(ch_lst)):  # ← 여기 핵심
-        total += ch_lst[j]
+    for j in range(i, len(ch_lst)):
         if total == 0:
             print([*ch_lst[i:j+1]])
