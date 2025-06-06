@@ -22,10 +22,10 @@ print(f"고유 숫자 리스트: {own_lst}")
 
 # 빈도 수 리스트 생성
 frequency_lst = []
-for n in range(len(own_lst)):
+for l in range(len(own_lst)):
     count = 0
-    for m in range(len(random_lst)):
-        if own_lst[n] == random_lst[m]:
+    for n in range(len(random_lst)):
+        if own_lst[l] == random_lst[n]:
             count += 1
     frequency_lst.append(count)
 print(f"빈도 수 리스트: {frequency_lst}\n")
@@ -35,9 +35,16 @@ print(f"빈도 수 리스트: {frequency_lst}\n")
 print(f"가장 많이 등장한 숫자 Top3 (동점 포함):")
 top3_idx = []
 top3_num = []
+
 for idx, num in enumerate(frequency_lst):
     top3_idx.append(idx)
     top3_num.append(num)
+max_num = []
+for num in range(len(top3_num)):
+    if 
+        max_num.append(num)
+        
+
 # print(top3_idx, top3_num)
 
 # 출력은 숫자와 발생 횟수와 함께 출력
