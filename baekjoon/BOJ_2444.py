@@ -6,6 +6,19 @@
 
 n = int(input())
 
-for i in range(n, 0, -1):
-    print(" "*i,)
-    print("*")
+for u in range(n):
+    for _ in range(n-1, u, -1):
+        print(" ", end="")
+    
+    for _ in range(u*2+1):
+        print("*", end="")
+    print()
+    
+
+for d in range(n, 1, -1):
+    for b in range((n-d)+1):
+        print(" ", end="")
+
+    for l in range(d*2-2, 1, -1):
+        print("*", end="")
+    print()
