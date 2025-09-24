@@ -9,14 +9,12 @@
 
 word = input().upper()
 word_list = list(set(word))
-print(word_list) # S M P I
+
 cnt = []
 for i in word_list:
-    print(i)
     count = word.count(i)
     cnt.append(count)
-print(cnt) # 4 1 1 4
-print(cnt.count(max(cnt))) # 2
+
 if cnt.count(max(cnt)) > 1:
     print("?")
 
